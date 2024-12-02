@@ -1,7 +1,7 @@
 use std::io::Result;
 use structopt::StructOpt;
 
-use super::IAdapter;
+use super::iadapter::IAdapter;
 
 #[derive(Debug, StructOpt)]
 pub enum ApiAdapter {
@@ -15,11 +15,11 @@ pub enum ApiAdapter {
     },
 }
 
-pub fn init_api(name: &String) -> Result<()> {
+pub fn init_api(_name: &String) -> Result<()> {
     todo!("Implement Todo App");
 }
 
-pub fn module(name: &String) -> Result<()> {
+pub fn module(_name: &String) -> Result<()> {
     todo!("Implement Todo App");
 }
 

@@ -1,7 +1,7 @@
 use std::io::Result;
 use structopt::StructOpt;
 
-use super::IAdapter;
+use super::iadapter::IAdapter;
 
 #[derive(Debug, StructOpt)]
 pub enum AppAdapter {
@@ -19,16 +19,16 @@ pub enum AppAdapter {
     },
 }
 
-pub fn init_app(name: String) -> Result<()> {
-    todo!("Implement Todo App INIT: {}", name);
+pub fn init_app(_name: String) -> Result<()> {
+    todo!("Implement Todo App INIT: {}", _name);
 }
 
-pub fn component(name: String) -> Result<()> {
-    todo!("Implement Todo App COMPONENT: {}", name);
+pub fn component(_name: String) -> Result<()> {
+    todo!("Implement Todo App COMPONENT: {}", _name);
 }
 
-pub fn screen(name: String) -> Result<()> {
-    todo!("Implement Todo App SCREEN: {}", name);
+pub fn screen(_name: String) -> Result<()> {
+    todo!("Implement Todo App SCREEN: {}", _name);
 }
 
 impl IAdapter<AppAdapter> for AppAdapter {

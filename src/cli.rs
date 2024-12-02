@@ -1,5 +1,5 @@
 use structopt::StructOpt;
-pub mod adapter;
+mod adapter;
 
 #[derive(Debug, StructOpt)]
 #[structopt(

@@ -1,12 +1,10 @@
-use std::io::Result;
-
-use structopt::StructOpt;
 mod api;
 mod app;
+mod iadapter;
 
-trait IAdapter<T> {
-    fn matcher(self) -> Result<()>;
-}
+use iadapter::IAdapter;
+use std::io::Result;
+use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
 pub enum Apps {
